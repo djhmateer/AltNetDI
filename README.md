@@ -11,8 +11,7 @@ Use the bootstrapper to decide which example to run
 
 1. Dependency injection
 
-2. Manager comes and says wants to log all the writes to a file
-     decorator pattern
+2. Manager comes and says wants to log all the writes to a file - decorator pattern
 
 3. Manager wants to read from DB
 
