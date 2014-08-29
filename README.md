@@ -14,7 +14,7 @@ Use the bootstrapper to decide which example to run
 2. Manager comes and says wants to log all the writes to a file
      decorator pattern
 
-3 Manager wants to read from DB
+3. Manager wants to read from DB
 
 4. Manager wants to logs all write to db
 
