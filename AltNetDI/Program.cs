@@ -6,7 +6,7 @@ namespace AltNetDI {
         {
             // bootstrapper for examples
             //Example1.EMain();
-            Example2.EMain();
+            Example6.EMain();
         }
     }
 }
