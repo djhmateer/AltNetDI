@@ -5,8 +5,8 @@ namespace AltNetDI {
         static void Main(string[] args)
         {
             // bootstrapper for examples
-            //Example1.EMain();
-            Example6.EMain();
+            Example1.EMain();
+            //Example6.EMain();
         }
     }
 }

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Reads from a text file">
+    <Position X="1.969" Y="7.75" Height="0.438" Width="1.638" />
+  </Comment>
+  <Comment CommentText="Writes to the screen">
+    <Position X="4.417" Y="7.708" Height="0.438" Width="1.638" />
+  </Comment>
+  <Comment CommentText="Accepts dependencies of Reader and Writer.  Calls reader to get text from a text file, then writer to write to the screen">
+    <Position X="4.708" Y="3.135" Height="0.865" Width="2.075" />
+  </Comment>
+  <Comment CommentText="Composition Root - instantiates Reader, Writer and App.">
+    <Position X="0.5" Y="2.021" Height="0.521" Width="2.075" />
+  </Comment>
+  <Class Name="AltNetDI.Example1">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AltNetDI.App" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="reader" />
+      <Field Name="writer" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AltNetDI.Reader" BaseTypeListCollapsed="true">
+    <Position X="2" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AltNetDI.Writer" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="AltNetDI.IApp">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AltNetDI.IReader">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AltNetDI.IWriter">
+    <Position X="4.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Example1.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

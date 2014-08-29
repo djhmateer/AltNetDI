@@ -1,11 +1,14 @@
 ﻿using System;
 
 namespace AltNetDI {
+    // Read text from a file, and display on the screen
     class Example1 {
         public static void EMain() {
+            // Composition Root 
             IReader reader = new Reader();
             IWriter writer = new Writer();
 
+            // Dependency Injection!
             IApp app = new App(reader, writer);
             app.Run();
         }
@@ -19,6 +22,7 @@ namespace AltNetDI {
         private readonly IReader reader;
         private readonly IWriter writer;
 
+        // The App receiving it's dependencies
         public App(IReader reader, IWriter writer) {
             this.reader = reader;
             this.writer = writer;
@@ -36,7 +40,7 @@ namespace AltNetDI {
 
     public class Reader : IReader {
         public string Read() {
-            // read the file
+            // read from a file
             return "blah";
         }
     }
