@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="Reads from a text file">
-    <Position X="1.969" Y="7.75" Height="0.438" Width="1.638" />
-  </Comment>
-  <Comment CommentText="Writes to the screen">
-    <Position X="4.417" Y="7.708" Height="0.438" Width="1.638" />
-  </Comment>
   <Comment CommentText="Accepts dependencies of Reader and Writer.  Calls reader to get text from a text file, then writer to write to the screen">
     <Position X="4.708" Y="3.135" Height="0.865" Width="2.075" />
   </Comment>
@@ -31,7 +25,7 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI.Reader" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI.TextFileReader" BaseTypeListCollapsed="true">
     <Position X="2" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -39,7 +33,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI.Writer" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI.ConsoleWriter" BaseTypeListCollapsed="true">
     <Position X="4.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>

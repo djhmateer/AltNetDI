@@ -8,7 +8,7 @@ namespace AltNetDI2 {
             // db - open for extension, closed for modification
             //IReader reader = new DbReader();
 
-            //IWriter writer = new Writer();
+            //IWriter writer = new ConsoleWriter();
             IWriter writer = new WriteLogger(new AggregateWriter(new[]
             {
                 new Writer(), 

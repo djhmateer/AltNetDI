@@ -5,8 +5,8 @@ namespace AltNetDI {
     class Example1 {
         public static void EMain() {
             // Composition Root 
-            IReader reader = new Reader();
-            IWriter writer = new Writer();
+            IReader reader = new TextFileReader();
+            IWriter writer = new ConsoleWriter();
 
             // Dependency Injection!
             IApp app = new App(reader, writer);
@@ -38,9 +38,9 @@ namespace AltNetDI {
         string Read();
     }
 
-    public class Reader : IReader {
+    public class TextFileReader : IReader {
         public string Read() {
-            // read from a file
+            // read from a textfile
             return "blah";
         }
     }
@@ -49,7 +49,7 @@ namespace AltNetDI {
         void Write(string text);
     }
 
-    public class Writer : IWriter {
+    public class ConsoleWriter : IWriter {
         public void Write(string text) {
             Console.WriteLine(text);
         }
