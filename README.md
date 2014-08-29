@@ -14,13 +14,13 @@ Use the bootstrapper to decide which example to run
 2. Manager comes and says wants to log all the writes to a file
      decorator pattern
 
-2.5 Manager wants to read from DB
+3 Manager wants to read from DB
 
-3. Manager wants to logs all write to db
+4. Manager wants to logs all write to db
 
-4. Testing - want to make sure the datetime of the logger is correct
+5. Testing - want to make sure the datetime of the logger is correct
 
-5. Manager wants to log file and database
+6. Manager wants to log file and database
 
 **all new changes - only affect compostiion root, and new code is added.
 ie codebase is Open for Extension, Closed for Modification
