@@ -1,33 +1,35 @@
 ﻿using System;
 
+// Read text from a file, and display on the screen
 namespace AltNetDI {
-    // Read text from a file, and display on the screen
-    class Example1 {
+    class CompositionRoot {
         public static void EMain() {
-            // Composition Root 
+            // Instantiating the objects we will need
             IReader reader = new TextFileReader();
             IWriter writer = new ConsoleWriter();
 
-            // Dependency Injection!
-            IApp app = new App(reader, writer);
-            app.Run();
+            // Pass objects to our Appliction via Dependency Injection
+            IApplication application = new Application(reader, writer);
+            application.Run();
         }
     }
 
-    public interface IApp {
+    public interface IApplication {
         void Run();
     }
 
-    public class App : IApp {
+    // Arguably this is where the business logic starts - above is just setup
+    public class Application : IApplication {
         private readonly IReader reader;
         private readonly IWriter writer;
 
-        // The App receiving it's dependencies
-        public App(IReader reader, IWriter writer) {
+        // The Application receiving it's dependencies
+        public Application(IReader reader, IWriter writer) {
             this.reader = reader;
             this.writer = writer;
         }
 
+        // Do stuff with the dependencies we have been passed
         public void Run() {
             var text = reader.Read();
             writer.Write(text);
@@ -40,7 +42,7 @@ namespace AltNetDI {
 
     public class TextFileReader : IReader {
         public string Read() {
-            // read from a textfile
+            // Read from a textfile
             return "blah";
         }
     }
@@ -51,6 +53,7 @@ namespace AltNetDI {
 
     public class ConsoleWriter : IWriter {
         public void Write(string text) {
+            // Write to the console
             Console.WriteLine(text);
         }
     }

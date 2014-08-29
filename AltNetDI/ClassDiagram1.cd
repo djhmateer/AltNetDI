@@ -6,18 +6,18 @@
   <Comment CommentText="Composition Root - instantiates Reader, Writer and App.">
     <Position X="0.5" Y="2.021" Height="0.521" Width="2.075" />
   </Comment>
-  <Class Name="AltNetDI.Example1">
+  <Class Name="AltNetDI.CompositionRoot">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI.App" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI.Application" BaseTypeListCollapsed="true">
     <Position X="3" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="reader" />
@@ -29,7 +29,7 @@
     <Position X="2" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -37,29 +37,29 @@
     <Position X="4.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="AltNetDI.IApp">
+  <Interface Name="AltNetDI.IApplication">
     <Position X="3" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AltNetDI.IReader">
     <Position X="2" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AltNetDI.IWriter">
     <Position X="4.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example1.cs</FileName>
+      <FileName>CompositionRoot.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
