@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xunit;
 
 //5. Testing - want to make sure the datetime of the writerlogger is correct
@@ -27,7 +28,7 @@ namespace AltNetDI5 {
             this.writer = writer;
         }
 
-        // Do stuff with the dependencies we have been passed
+        // Do Messages with the dependencies we have been passed
         public void Run() {
             var text = reader.Read();
             writer.Write(text);
@@ -48,42 +49,57 @@ namespace AltNetDI5 {
             Console.WriteLine("Writer says: {0}", text);
         }
     }
-
-    //5. Testing - want to make sure that the datetime outputted of the writerlogger is correct
+    
     public class WriterLogger : IWriter {
         private readonly IWriter writer;
         private readonly IConsoleWriter consoleWriter;
         private readonly Func<DateTime> now;
 
-        public WriterLogger(IWriter writer, IConsoleWriter consoleWriter, Func<DateTime> now)
-        {
+        public WriterLogger(IWriter writer, IConsoleWriter consoleWriter, Func<DateTime> now) {
             this.writer = writer;
             this.consoleWriter = consoleWriter;
             this.now = now;
         }
 
         public void Write(string text) {
+            // Abstracted out writing to console so tests only test the WriteLogger
             consoleWriter.WriteLine("WriterLogger says: {0} {1}", now(), text);
             writer.Write(text);
             consoleWriter.WriteLine("WriterLogger says: Finished logging");
         }
     }
 
-    // 
-    public interface IConsoleWriter {void WriteLine(string format, params object[] args);}
-    public class ConsoleWriter : IConsoleWriter {
-        public void WriteLine(string format, params object[] args) {
-            Console.WriteLine(format, args);
+    //5. Testing - want to make sure that the datetime outputted of the writerlogger is correct
+    public class WriterLoggerTests {
+        [Fact]
+        public void ShouldLogMessagesWithAGivenDateTime() {
+            var fakeWriter = new FakeWriter();
+            var fakeConsoleWriter = new FakeConsoleWriter();
+            var dateTime = new DateTime(2014, 1, 24, 01, 02, 03);
+            // Passing in fake dependencies so can test WriterLogger in isolation
+            var writerLogger = new WriterLogger(fakeWriter, fakeConsoleWriter, () => dateTime);
+
+            writerLogger.Write("test");
+
+            Assert.Equal("WriterLogger says: 24/01/2014 01:02:03 test", fakeConsoleWriter.Messages[0]);
         }
     }
 
-    public class WriterLoggerTests {
-        public void ShouldReturnDateTimeWhichIsNow() {
-            var fakeWriter = new FakeWriter();
-            //var writerLogger = new WriterLogger(fakeWriter);
-            //writerLogger.Write("test message");
+    // FakeConsoleWriter using a collection to store all messages
+    public class FakeConsoleWriter : IConsoleWriter
+    {
+        public List<string> Messages;
+        public FakeConsoleWriter() { Messages = new List<string>(); }
+        public void WriteLine(string format, params object[] args) {
+            Messages.Add(String.Format(format, args));
+        }
+    }
 
-            //Assert.Equal("WriterLogger says: test message");
+    // format is the text with {} in there
+    public interface IConsoleWriter { void WriteLine(string format, params object[] args);}
+    public class ConsoleWriter : IConsoleWriter {
+        public void WriteLine(string format, params object[] args) {
+            Console.WriteLine(format, args);
         }
     }
 
