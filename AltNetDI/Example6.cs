@@ -73,7 +73,6 @@ namespace AltNetDI6 {
         }
 
         public void Write(string text) {
-
             consoleWriter.WriteLine("[{0}] {1}", now(), text);
             writer.Write(text);
             consoleWriter.WriteLine("I've done my logging");

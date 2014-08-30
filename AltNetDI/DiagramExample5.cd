@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="uses ie is passed in this dependency">
+    <Position X="2.083" Y="3.334" Height="0.698" Width="1.19" />
+  </Comment>
+  <Comment CommentText="uses">
+    <Position X="4.448" Y="3.5" Height="0.333" Width="0.7" />
+  </Comment>
+  <Comment CommentText="uses">
+    <Position X="5.875" Y="4.917" Height="0.333" Width="0.7" />
+  </Comment>
+  <Comment CommentText="news up a TextFileReader news up a ConsoleWriter passes ConsoleWriter to a new WriterLogger">
+    <Position X="0.5" Y="1.854" Height="0.75" Width="1.627" />
+  </Comment>
+  <Class Name="AltNetDI5.CompositionRoot">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AltNetDI5.Application" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="reader" />
+      <Field Name="writer" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AltNetDI5.TextFileReader" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AltNetDI5.ConsoleWriter" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AltNetDI5.WriterLogger" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="writer" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="AltNetDI5.IApplication">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AltNetDI5.IReader">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AltNetDI5.IWriter">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Example5.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

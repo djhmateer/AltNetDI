@@ -1,8 +1,8 @@
 ﻿using System;
+using Xunit;
 
-// Read text from a file, and display it on the screen
-// 2. Manager comes and says wants to log all the writes to a file - decorator pattern
-namespace AltNetDI2 {
+//5. Testing - want to make sure the datetime of the writerlogger is correct
+namespace AltNetDI5 {
     class CompositionRoot {
         public static void EMain() {
             // Instantiating the objects we will need
@@ -18,7 +18,6 @@ namespace AltNetDI2 {
         }
     }
 
-    // Arguably this is where the business logic starts - above is just setup
     public interface IApplication { void Run();}
     public class Application : IApplication {
         private readonly IReader reader;
@@ -53,6 +52,7 @@ namespace AltNetDI2 {
         }
     }
 
+    //5. Testing - want to make sure that the datetime outputted of the writerlogger is correct
     public class WriterLogger : IWriter {
         private readonly IWriter writer;
 
@@ -61,9 +61,32 @@ namespace AltNetDI2 {
         }
 
         public void Write(string text) {
-            Console.WriteLine("Logging the write: {0}", text);
+            Console.WriteLine("WriterLogger says: {0} {1}", DateTime.Now, text);
             writer.Write(text);
-            Console.WriteLine("Finished logging");
+            Console.WriteLine("WriterLogger says: Finished logging");
+        }
+    }
+
+    public class WriterLoggerTests {
+        public void ShouldReturnDateTimeWhichIsNow() {
+            var fakeWriter = new FakeWriter();
+            var writerLogger = new WriterLogger(fakeWriter);
+            writerLogger.Write("test message");
+
+            //Assert.Equal("WriterLogger says: test message");
+        }
+    }
+
+    public class FakeWriter : IWriter {
+        public void Write(string text) { }
+    }
+
+    public class TextFileReaderTest {
+        [Fact]
+        public void Read_ShouldReturnBlah() {
+            var reader = new TextFileReader();
+            var result = reader.Read();
+            Assert.Equal("blah", result);
         }
     }
 }
