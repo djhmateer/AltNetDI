@@ -96,32 +96,6 @@ namespace AltNetDI6 {
         }
     }
 
-    
-    public class WriterLoggerTests {
-        [Fact]
-        public void ShouldLogMessagesWithAGivenDateTime() {
-            var fakeWriter = new FakeWriter();
-            var fakeConsoleWriter = new FakeConsoleWriterLogger();
-            var dateTime = new DateTime(2014, 1, 24, 01, 02, 03);
-            // Passing in fake dependencies so can test WriterLogger in isolation
-            var writerLogger = new WriterLogger(fakeWriter, fakeConsoleWriter, dateTime);
-
-            writerLogger.Write("test");
-
-            Assert.Equal("WriterLogger says: 24/01/2014 01:02:03 test", fakeConsoleWriter.Messages[0]);
-        }
-    }
-
-    // FakeConsoleWriterLogger using a collection to store all messages
-    public class FakeConsoleWriterLogger : IConsoleWriterLogger
-    {
-        public List<string> Messages;
-        public FakeConsoleWriterLogger() { Messages = new List<string>(); }
-        public void WriteLine(string format, params object[] args) {
-            Messages.Add(String.Format(format, args));
-        }
-    }
-
     // format is the text with {} in there
     public interface IConsoleWriterLogger { void WriteLine(string format, params object[] args);}
     public class ConsoleWriterLogger : IConsoleWriterLogger {
@@ -130,16 +104,43 @@ namespace AltNetDI6 {
         }
     }
 
-    public class FakeWriter : IWriter {
-        public void Write(string text) { }
-    }
+    //public class WriterLoggerTests {
+    //    [Fact]
+    //    public void ShouldLogMessagesWithAGivenDateTime() {
+    //        var fakeWriter = new FakeWriter();
+    //        var fakeConsoleWriter = new FakeConsoleWriterLogger();
+    //        var dateTime = new DateTime(2014, 1, 24, 01, 02, 03);
+    //        // Passing in fake dependencies so can test WriterLogger in isolation
+    //        var writerLogger = new WriterLogger(fakeWriter, fakeConsoleWriter, dateTime);
 
-    public class TextFileReaderTest {
-        [Fact]
-        public void Read_ShouldReturnBlah() {
-            var reader = new TextFileReader();
-            var result = reader.Read();
-            Assert.Equal("blah", result);
-        }
-    }
+    //        writerLogger.Write("test");
+
+    //        Assert.Equal("WriterLogger says: 24/01/2014 01:02:03 test", fakeConsoleWriter.Messages[0]);
+    //    }
+    //}
+
+    //// FakeConsoleWriterLogger using a collection to store all messages
+    //public class FakeConsoleWriterLogger : IConsoleWriterLogger
+    //{
+    //    public List<string> Messages;
+    //    public FakeConsoleWriterLogger() { Messages = new List<string>(); }
+    //    public void WriteLine(string format, params object[] args) {
+    //        Messages.Add(String.Format(format, args));
+    //    }
+    //}
+
+   
+
+    //public class FakeWriter : IWriter {
+    //    public void Write(string text) { }
+    //}
+
+    //public class TextFileReaderTest {
+    //    [Fact]
+    //    public void Read_ShouldReturnBlah() {
+    //        var reader = new TextFileReader();
+    //        var result = reader.Read();
+    //        Assert.Equal("blah", result);
+    //    }
+    //}
 }
