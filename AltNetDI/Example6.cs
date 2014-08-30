@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AltNetDI2 {
+namespace AltNetDI6 {
     class Example6 {
         public static void EMain() {
             IReader reader = new Reader();

@@ -1,12 +1,16 @@
 ﻿using System;
 
 // Read text from a file, and display it on the screen
-namespace AltNetDI1 {
+// 2. Manager comes and says wants to log all the writes to a file - decorator pattern
+namespace AltNetDI2 {
     class CompositionRoot {
         public static void EMain() {
             // Instantiating the objects we will need
             IReader reader = new TextFileReader();
-            IWriter writer = new ConsoleWriter();
+            //IWriter writer = new ConsoleWriter();
+
+            // Decorating ConsoleWriter with a ConsoleWriterLogger
+            IWriter writer = new ConsoleWriterLogger(new ConsoleWriter());
 
             // Pass objects to our Appliction via Dependency Injection
             IApplication application = new Application(reader, writer);
@@ -41,11 +45,25 @@ namespace AltNetDI1 {
         }
     }
 
-    public interface IWriter {void Write(string text);}
+    public interface IWriter { void Write(string text);}
     public class ConsoleWriter : IWriter {
         public void Write(string text) {
             // Write to the console
-            Console.WriteLine(text);
+            Console.WriteLine("ConsoleWriter says: {0}", text);
+        }
+    }
+
+    public class ConsoleWriterLogger : IWriter {
+        private readonly IWriter writer;
+
+        public ConsoleWriterLogger(IWriter writer) {
+            this.writer = writer;
+        }
+
+        public void Write(string text) {
+            Console.WriteLine("Logging the write: {0}", text);
+            writer.Write(text);
+            Console.WriteLine("Finished logging");
         }
     }
 }
