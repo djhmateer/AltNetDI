@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Read text from a file, and display on the screen
+// Read text from a file, and display it on the screen
 namespace AltNetDI {
     class CompositionRoot {
         public static void EMain() {
@@ -14,11 +14,8 @@ namespace AltNetDI {
         }
     }
 
-    public interface IApplication {
-        void Run();
-    }
-
     // Arguably this is where the business logic starts - above is just setup
+    public interface IApplication { void Run();}
     public class Application : IApplication {
         private readonly IReader reader;
         private readonly IWriter writer;
@@ -36,10 +33,7 @@ namespace AltNetDI {
         }
     }
 
-    public interface IReader {
-        string Read();
-    }
-
+    public interface IReader { string Read();}
     public class TextFileReader : IReader {
         public string Read() {
             // Read from a textfile
@@ -47,10 +41,7 @@ namespace AltNetDI {
         }
     }
 
-    public interface IWriter {
-        void Write(string text);
-    }
-
+    public interface IWriter {void Write(string text);}
     public class ConsoleWriter : IWriter {
         public void Write(string text) {
             // Write to the console
