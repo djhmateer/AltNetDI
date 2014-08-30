@@ -12,11 +12,13 @@ namespace AltNetDI6 {
             // Decorating ConsoleWriter with a WriterLogger.  DateTime.Now is a struct
             //IWriter writer = new WriterLogger(new ConsoleWriter(), new consoleWriterLogger(), DateTime.Now);
 
-            IWriter writer = new WriterLogger(new AggregateWriter(new IWriter[]
+            var aggregateWriter = new AggregateWriter(new IWriter[]
             {
-                new ConsoleWriter(), 
+                new ConsoleWriter(),
                 new FileWriter()
-            }), new ConsoleWriterLogger(), DateTime.Now);
+            });
+
+            IWriter writer = new WriterLogger(aggregateWriter, new ConsoleWriterLogger(), DateTime.Now);
 
             IApplication application = new Application(reader, writer);
             application.Run();
