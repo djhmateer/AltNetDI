@@ -45,30 +45,29 @@
   <Comment CommentText="composed in CR">
     <Position X="6.729" Y="2.698" Height="0.333" Width="1.096" />
   </Comment>
-  <Class Name="AltNetDI5.CompositionRoot" Collapsed="true">
+  <Class Name="AltNetDI6.CompositionRoot" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI5.Application" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI6.Application" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="3" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="reader" />
-      <Field Name="writer" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI5.TextFileReader" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI6.TextFileReader" BaseTypeListCollapsed="true">
     <Position X="2.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -80,17 +79,13 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI5.WriterLogger" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI6.WriterLogger" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="6.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAACAAAAAAAAAQAAAAEAAAA=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="writer" />
-      <Field Name="consoleWriter" />
-      <Field Name="now" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI5.ConsoleWriter" BaseTypeListCollapsed="true">
@@ -101,36 +96,40 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI5.WriterLoggerTests">
+  <Class Name="AltNetDI6.WriterLoggerTests">
     <Position X="11" Y="4.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI5.FakeWriter" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI6.FakeWriter" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="11" Y="5.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI5.TextFileReaderTest" Collapsed="true">
+  <Class Name="AltNetDI6.TextFileReaderTest" Collapsed="true">
     <Position X="11" Y="3.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="AltNetDI5.IApplication" Collapsed="true">
+  <Interface Name="AltNetDI6.IApplication" Collapsed="true">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
-      <FileName>Example5.cs</FileName>
+      <FileName>Example6.cs</FileName>
+      <NewMemberFileName>Example5.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AltNetDI5.IReader" Collapsed="true">
