@@ -96,8 +96,7 @@ namespace AltNetDI6 {
         }
     }
 
-
-    //5. Testing - want to make sure that the datetime outputted of the writerlogger is correct
+    
     public class WriterLoggerTests {
         [Fact]
         public void ShouldLogMessagesWithAGivenDateTime() {
