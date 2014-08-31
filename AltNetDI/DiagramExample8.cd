@@ -57,10 +57,18 @@
   <Class Name="AltNetDI8.SQLTransformerLogger" Collapsed="true">
     <Position X="3" Y="6.75" Width="2" />
     <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example8.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AltNetDI8.FakeSQLTransformerLogger" Collapsed="true">
+    <Position X="7" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="AltNetDI8.IApplication" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
