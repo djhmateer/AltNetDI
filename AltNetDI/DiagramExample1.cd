@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Accepts dependencies of Reader and Writer.  Calls reader to get text from a text file, then writer to write to the console">
-    <Position X="4.708" Y="3.135" Height="0.865" Width="2.075" />
+    <Position X="4.802" Y="2.031" Height="0.865" Width="2.075" />
   </Comment>
   <Comment CommentText="Instantiates Reader, Writer and App.">
-    <Position X="0.5" Y="2.021" Height="0.521" Width="2.075" />
+    <Position X="0.5" Y="1.156" Height="0.521" Width="1.815" />
   </Comment>
-  <Class Name="AltNetDI.CompositionRoot">
-    <Position X="0.5" Y="0.75" Width="1.5" />
+  <Class Name="AltNetDI1.CompositionRoot" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI.Application" BaseTypeListCollapsed="true">
-    <Position X="3" Y="2.75" Width="1.5" />
+  <Class Name="AltNetDI1.Application" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
       <FileName>Example1.cs</FileName>
@@ -25,38 +25,38 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI.TextFileReader" BaseTypeListCollapsed="true">
-    <Position X="2" Y="6.5" Width="1.5" />
+  <Class Name="AltNetDI1.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI.ConsoleWriter" BaseTypeListCollapsed="true">
-    <Position X="4.25" Y="6.5" Width="1.5" />
+  <Class Name="AltNetDI1.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="AltNetDI.IApplication">
-    <Position X="3" Y="0.75" Width="1.5" />
+  <Interface Name="AltNetDI1.IApplication" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI.IReader">
-    <Position X="2" Y="5" Width="1.5" />
+  <Interface Name="AltNetDI1.IReader" Collapsed="true">
+    <Position X="2" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI.IWriter">
-    <Position X="4.25" Y="5" Width="1.5" />
+  <Interface Name="AltNetDI1.IWriter" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example1.cs</FileName>

@@ -44,7 +44,6 @@ namespace AltNetDI1 {
     public interface IWriter {void Write(string text);}
     public class ConsoleWriter : IWriter {
         public void Write(string text) {
-            // Write to the console
             Console.WriteLine(text);
         }
     }

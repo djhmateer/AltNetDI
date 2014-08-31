@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xunit;
 
-//5. Testing - want to make sure the datetime of the writerlogger is correct
+//5. Testing - want to make sure the datetime of the WriterLogger is correct
 namespace AltNetDI5 {
     class CompositionRoot {
         public static void EMain() {

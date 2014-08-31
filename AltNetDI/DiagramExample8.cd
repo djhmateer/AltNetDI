@@ -14,9 +14,9 @@
       <FileName>Example8.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="reader" />
       <Field Name="sqlTransformer" />
       <Field Name="writer" />
+      <Field Name="reader" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -31,14 +31,6 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI8.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="1" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example8.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
   <Class Name="AltNetDI8.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
@@ -50,7 +42,7 @@
   <Class Name="AltNetDI8.SQLTransformerTests" Collapsed="true">
     <Position X="7" Y="4.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAACAAA=</HashCode>
       <FileName>Example8.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -70,6 +62,14 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="AltNetDI8.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example8.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
   <Interface Name="AltNetDI8.IApplication" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -84,13 +84,6 @@
       <FileName>Example8.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI8.IReader" Collapsed="true">
-    <Position X="1" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example8.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="AltNetDI8.IWriter" Collapsed="true">
     <Position X="5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
@@ -102,6 +95,13 @@
     <Position X="3" Y="5.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example8.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AltNetDI8.IReader" Collapsed="true">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8.cs</FileName>
     </TypeIdentifier>
   </Interface>

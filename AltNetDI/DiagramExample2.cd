@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Decorator - WriterLogger decorates ConsoleWriter">
-    <Position X="7.104" Y="3.25" Height="0.75" Width="1.7" />
+    <Position X="5.937" Y="3.198" Height="0.75" Width="1.7" />
   </Comment>
   <Comment CommentText="uses ie Application is passed in this dependency">
-    <Position X="2.25" Y="3.292" Height="0.646" Width="1.294" />
+    <Position X="1.479" Y="2.875" Height="0.646" Width="1.294" />
   </Comment>
   <Comment CommentText="uses">
-    <Position X="5.063" Y="3.385" Height="0.333" Width="0.7" />
+    <Position X="4.063" Y="3.385" Height="0.333" Width="0.7" />
   </Comment>
   <Comment CommentText="uses">
-    <Position X="6.438" Y="4.865" Height="0.333" Width="0.7" />
+    <Position X="5.438" Y="4.865" Height="0.333" Width="0.7" />
   </Comment>
-  <Class Name="AltNetDI2.CompositionRoot">
+  <Class Name="AltNetDI2.CompositionRoot" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example2.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI2.Application" BaseTypeListCollapsed="true">
-    <Position X="3.5" Y="2" Width="1.5" />
+  <Class Name="AltNetDI2.Application" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
       <FileName>Example2.cs</FileName>
@@ -31,24 +31,24 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI2.TextFileReader" BaseTypeListCollapsed="true">
-    <Position X="2.75" Y="5.75" Width="1.5" />
+  <Class Name="AltNetDI2.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example2.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI2.ConsoleWriter" BaseTypeListCollapsed="true">
-    <Position X="4.75" Y="5.75" Width="1.5" />
+  <Class Name="AltNetDI2.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example2.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AltNetDI2.WriterLogger" BaseTypeListCollapsed="true">
-    <Position X="7.25" Y="4.25" Width="1.5" />
+  <Class Name="AltNetDI2.WriterLogger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
       <FileName>Example2.cs</FileName>
@@ -58,22 +58,22 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="AltNetDI2.IApplication">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+  <Interface Name="AltNetDI2.IApplication" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Example2.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI2.IReader">
-    <Position X="2.75" Y="4.25" Width="1.5" />
+  <Interface Name="AltNetDI2.IReader" Collapsed="true">
+    <Position X="1.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example2.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI2.IWriter">
-    <Position X="4.75" Y="4.25" Width="1.5" />
+  <Interface Name="AltNetDI2.IWriter" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example2.cs</FileName>
