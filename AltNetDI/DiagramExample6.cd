@@ -12,81 +12,70 @@
   <Comment CommentText="3. news up a WriterLogger passing in the AggregateWriter, and ConsoleWriterLogger to output to and dateTime">
     <Position X="0.5" Y="2.43" Height="1.069" Width="1.7" />
   </Comment>
-  <Class Name="AltNetDI6.CompositionRoot" Collapsed="true">
+  <Class Name="AltNetDI7.CompositionRoot" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
-      <NewMemberFileName>Example5.cs</NewMemberFileName>
+      <FileName>Example7.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI6.Application" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI7.Application" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="2.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAI=</HashCode>
-      <FileName>Example6.cs</FileName>
-      <NewMemberFileName>Example5.cs</NewMemberFileName>
+      <FileName>Example7.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="reader" />
-      <Field Name="writer" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI6.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI7.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="1.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
-      <NewMemberFileName>Example5.cs</NewMemberFileName>
+      <FileName>Example7.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI6.FileWriter" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI7.FileWriter" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="3.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI6.WriterLogger" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI7.WriterLogger" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="6.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAMAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
-      <NewMemberFileName>Example5.cs</NewMemberFileName>
+      <FileName>Example7.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="writer" />
-      <Field Name="consoleWriterLogger" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI6.AggregateWriter" Collapsed="true">
+  <Class Name="AltNetDI7.AggregateWriter" Collapsed="true">
     <Position X="4.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAEAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="writers" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI6.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI7.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="3.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI6.ConsoleWriterLogger" Collapsed="true">
+  <Class Name="AltNetDI7.ConsoleWriterLogger" Collapsed="true">
     <Position X="6.25" Y="5.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -95,33 +84,35 @@
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Struct>
-  <Interface Name="AltNetDI6.IApplication" Collapsed="true">
+  <Interface Name="AltNetDI7.IApplication" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
-      <FileName>Example6.cs</FileName>
-      <NewMemberFileName>Example5.cs</NewMemberFileName>
+      <FileName>Example7.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI6.IReader" Collapsed="true">
+  <Interface Name="AltNetDI7.IReader" Collapsed="true">
     <Position X="1.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI6.IWriter" Collapsed="true">
+  <Interface Name="AltNetDI7.IWriter" Collapsed="true">
     <Position X="3.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI6.IConsoleWriterLogger" Collapsed="true">
+  <Interface Name="AltNetDI7.IConsoleWriterLogger" Collapsed="true">
     <Position X="6.25" Y="4.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example6.cs</FileName>
+      <FileName>Example7.cs</FileName>
+      <NewMemberFileName>Example6.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

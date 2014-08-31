@@ -25,7 +25,8 @@ Use the bootstrapper to decide which example to run
 ie codebase is Open for Extension, Closed for Modification
   Open/Closed principle
 
-**try and get a more real example of what this does
+7. Manager comes along wants you to write business logic that looks for [OldDbName] and
+replace it with [NewDbName] in Sql script input file
 
 
 Many thanks to Mike Hadlow

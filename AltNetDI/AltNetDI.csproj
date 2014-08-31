@@ -44,6 +44,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Example7.cs" />
     <Compile Include="Example6.cs" />
     <Compile Include="Example5.cs" />
     <Compile Include="Example2.cs" />
@@ -54,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DiagramExample7.cd" />
     <None Include="DiagramExample6.cd" />
     <None Include="DiagramExample5.cd" />
     <None Include="DiagramExample2.cd" />
@@ -62,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbScript.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
