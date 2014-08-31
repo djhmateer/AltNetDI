@@ -44,6 +44,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Example8.cs" />
     <Compile Include="Example7.cs" />
     <Compile Include="Example6.cs" />
     <Compile Include="Example5.cs" />
@@ -55,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DiagramExample8.cd" />
     <None Include="DiagramExample7.cd" />
     <None Include="DiagramExample6.cd" />
     <None Include="DiagramExample5.cd" />

@@ -2,18 +2,28 @@
 using System.IO;
 using Xunit;
 
-//7. Manager wants you to write business logic that looks for [OldDbName] and
-// replace it with [NewDbName] in Sql script input file
-namespace AltNetDI7 {
+//8. Manager wants you to log to screen all transformations with 
+// previous 2 lines and following 2 lines
+namespace AltNetDI8 {
     class CompositionRoot {
         public static void EMain() {
             IReader reader = new TextFileReader();
             IWriter writer = new ConsoleWriter();
-            ISQLTransformer isqlTransformer = new SQLTransformer();
+            ISQLTransformerLogger isqlTransformerLogger = new SQLTransformerLogger();
+            ISQLTransformer isqlTransformer = new SQLTransformer(isqlTransformerLogger);
+
             IApplication application = new Application(reader, writer, isqlTransformer);
             application.Run();
         }
     }
+
+    public interface ISQLTransformerLogger { void Log(string text);}
+    public class SQLTransformerLogger : ISQLTransformerLogger {
+        public void Log(string text) {
+            Console.WriteLine("SQLTransformerLogger says: {0}", text);
+        }
+    }
+
 
     public interface IApplication { void Run();}
     public class Application : IApplication {
@@ -36,9 +46,18 @@ namespace AltNetDI7 {
 
     public interface ISQLTransformer { string ReplaceOldDbNamesWithNewDbNames(string sql);}
     public class SQLTransformer : ISQLTransformer {
+        private readonly ISQLTransformerLogger isqlTransformerLogger;
+
+        public SQLTransformer(ISQLTransformerLogger isqlTransformerLogger) {
+            this.isqlTransformerLogger = isqlTransformerLogger;
+        }
+
         public string ReplaceOldDbNamesWithNewDbNames(string sql) {
-            sql = sql.Replace("[Funny]", "[FunnyNewDb]");
-            return sql;
+            // Find where we need to do a replacement
+            var startOfReplace = sql.IndexOf("[Funny]");
+            var sqlToSendToLogger = sql.Substring(startOfReplace - 15, 30);
+            isqlTransformerLogger.Log(sqlToSendToLogger);
+            return sql.Replace("[Funny]", "[FunnyNewDb]");
         }
     }
 
@@ -59,9 +78,9 @@ namespace AltNetDI7 {
     public class SQLTransformerTests {
         [Fact]
         public void ReplaceOldDbNamesWithNewDbNames_WhenFunny_ShouldReplaceWithFunnyNewDb() {
-            var transformer = new SQLTransformer();
-            var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny]");
-            Assert.Equal("[FunnyNewDb]", result);
+            //var transformer = new SQLTransformer();
+            //var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny]");
+            //Assert.Equal("[FunnyNewDb]", result);
         }
     }
 
