@@ -2,13 +2,16 @@
 using System.IO;
 using Xunit;
 
-//8. Manager wants you to log to screen all transformations with previous 2 lines and following 2 lines
+//8. Manager wants you to log to screen all transformations with previous 15 characters and following 15 characters 
+//   so can see where the changes have taken place
 namespace AltNetDI8 {
     class CompositionRoot {
         public static void EMain() {
             IReader reader = new TextFileReader();
             IWriter writer = new ConsoleWriter();
+            // A new logger
             ISQLTransformerLogger isqlTransformerLogger = new SQLTransformerLogger();
+            // Passing the logger as a dependency to SQLTransformer
             ISQLTransformer isqlTransformer = new SQLTransformer(isqlTransformerLogger);
             IApplication application = new Application(reader, writer, isqlTransformer);
             application.Run();
@@ -64,7 +67,6 @@ namespace AltNetDI8 {
         }
 
         public string GetSurroundingTextForReplace(string allSQL, int positionOfReplace) {
-            // Could do get preceeding 2 lines and subsequent 2 lines here
             return allSQL.Substring(positionOfReplace - 15, 30);
         }
     }

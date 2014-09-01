@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Read text from a file, and display it on the screen
+// 1.Read text from a file, and display it on the screen
 namespace AltNetDI1 {
     class CompositionRoot {
         public static void EMain() {

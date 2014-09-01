@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="uses">
+    <Position X="4" Y="5.25" Height="0.375" Width="0.7" />
+  </Comment>
   <Class Name="AltNetDI8.CompositionRoot" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -14,9 +17,9 @@
       <FileName>Example8.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="sqlTransformer" />
-      <Field Name="writer" />
       <Field Name="reader" />
+      <Field Name="writer" />
+      <Field Name="sqlTransformer" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -40,7 +43,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI8.SQLTransformerTests" Collapsed="true">
-    <Position X="7" Y="4.5" Width="1.75" />
+    <Position X="9.5" Y="4.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAACAAA=</HashCode>
       <FileName>Example8.cs</FileName>
@@ -55,7 +58,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI8.FakeSQLTransformerLogger" Collapsed="true">
-    <Position X="7" Y="5.75" Width="2.25" />
+    <Position X="9.5" Y="5.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8.cs</FileName>

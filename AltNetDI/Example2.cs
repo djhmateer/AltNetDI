@@ -1,6 +1,6 @@
 ﻿using System;
 
-// 2. Manager comes and says wants to log all the writes to a file - decorator pattern
+// 2. Manager wants to log all the writes to a file - decorator pattern
 namespace AltNetDI2 {
     class CompositionRoot {
         public static void EMain() {
