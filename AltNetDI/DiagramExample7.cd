@@ -1,91 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="uses">
-    <Position X="5.865" Y="2.448" Height="0.396" Width="0.7" />
-  </Comment>
-  <Comment CommentText="uses">
-    <Position X="3.396" Y="2.417" Height="0.396" Width="0.7" />
-  </Comment>
-  <Comment CommentText="uses">
-    <Position X="1.615" Y="2.521" Height="0.396" Width="0.7" />
-  </Comment>
-  <Class Name="AltNetDI7.CompositionRoot" Collapsed="true">
+  <Class Name="AltNetDI8.CompositionRoot" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AltNetDI7.Application" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="AltNetDI8.Application" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="2.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAgI=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="reader" />
-      <Field Name="writer" />
-      <Field Name="sqlTransformer" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI7.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="1.25" Y="4.5" Width="1.5" />
+  <Class Name="AltNetDI8.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI7.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="4.5" Width="1.5" />
+  <Class Name="AltNetDI8.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI7.SQLTransformer" Collapsed="true">
-    <Position X="3.5" Y="4.5" Width="1.5" />
+  <Class Name="AltNetDI8.SQLTransformer" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="AltNetDI7.SQLTransformerTests" Collapsed="true">
-    <Position X="0.75" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Interface Name="AltNetDI7.IApplication" Collapsed="true">
+  <Interface Name="AltNetDI8.IApplication" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI7.IReader" Collapsed="true">
-    <Position X="1.25" Y="3.5" Width="1.5" />
+  <Interface Name="AltNetDI8.IReader" Collapsed="true">
+    <Position X="1.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI7.IWriter" Collapsed="true">
-    <Position X="5.75" Y="3.5" Width="1.5" />
+  <Interface Name="AltNetDI8.IWriter" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AltNetDI7.ISQLTransformer" Collapsed="true">
-    <Position X="3.5" Y="3.5" Width="1.5" />
+  <Interface Name="AltNetDI8.ISQLTransformer" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Example7.cs</FileName>
+      <FileName>Example8.cs</FileName>
+      <NewMemberFileName>Example7.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
