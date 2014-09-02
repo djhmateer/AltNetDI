@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltNetDI", "AltNetDI\AltNet
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E3377EEA-757C-4209-BBC7-E5E8DB512637}"
 	ProjectSection(SolutionItems) = preProject
+		Chunkfive.otf = Chunkfive.otf
 		My Journey into Dependency Injection.pptx = My Journey into Dependency Injection.pptx
+		OpenSans-Regular.ttf = OpenSans-Regular.ttf
 		README.md = README.md
 	EndProjectSection
 EndProject
