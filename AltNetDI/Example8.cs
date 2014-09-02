@@ -63,18 +63,18 @@ namespace AltNetDI8 {
     public class SQLTransformerLogger : ISQLTransformerLogger {
         public void Log(string allSQL, int positionOfReplace) {
             var message = GetSurroundingTextForReplace(allSQL, positionOfReplace);
-            Console.WriteLine("SQLTransformerLogger says: {0}", message);
+            Console.WriteLine("SQLTransformerLogger says: {0}" + Environment.NewLine + Environment.NewLine, message);
         }
 
         public string GetSurroundingTextForReplace(string allSQL, int positionOfReplace) {
-            return allSQL.Substring(positionOfReplace - 15, 30);
+            return allSQL.Substring(positionOfReplace - 18, 30);
         }
     }
 
     public interface IWriter { void Write(string text);}
     public class ConsoleWriter : IWriter {
         public void Write(string text) {
-            Console.WriteLine("ConsoleWriter says: {0}", text);
+            Console.WriteLine("ConsoleWriter says: {0} " , text);
         }
     }
 
