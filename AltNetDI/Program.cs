@@ -7,7 +7,8 @@
             //AltNetDI5.CompositionRoot.EMain();
             //AltNetDI6.CompositionRoot.EMain();
             //AltNetDI7.CompositionRoot.EMain();
-            AltNetDI8.CompositionRoot.EMain();
+            //AltNetDI8.CompositionRoot.EMain();
+            AltNetDI8Decorator.CompositionRoot.EMain();
         }
     }
 }
