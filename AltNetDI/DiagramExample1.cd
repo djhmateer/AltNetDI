@@ -32,20 +32,20 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI1.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2" Y="5.75" Width="1.5" />
+    <Position X="2" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI1.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4.25" Y="5.75" Width="1.5" />
+    <Position X="4.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example1.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="AltNetDI1.IApplication" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
