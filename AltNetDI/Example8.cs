@@ -77,5 +77,29 @@ namespace AltNetDI8 {
             Console.WriteLine("ConsoleWriter says: {0} " , text);
         }
     }
+
+    public class SQLTransformerTests
+    {
+        [Fact]
+        public void ReplaceOldDbNamesWithNewDbNames_WhenFunny_ShouldReplaceWithFunnyNewDb()
+        {
+            var transformer = new SQLTransformer(new FakeSQLTransformerLogger());
+            var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny]");
+            Assert.Equal("[FunnyNewDb]", result);
+        }
+
+        [Fact]
+        public void ReplaceOldDbNamesWithNewDbNames_WhenMultipleFunny_ShouldReplaceWithFunnyNewDb()
+        {
+            var transformer = new SQLTransformer(new FakeSQLTransformerLogger());
+            var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny] asdf asdf [Funny] asdfasdf");
+            Assert.Equal("[FunnyNewDb] asdf asdf [FunnyNewDb] asdfasdf", result);
+        }
+    }
+
+    public class FakeSQLTransformerLogger : ISQLTransformerLogger
+    {
+        public void Log(string allSQL, int positionOfReplace) { }
+    }
     
 }
