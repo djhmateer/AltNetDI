@@ -13,8 +13,8 @@ Do the examples in the following order :-)  Have left this crazy numbering syste
 
 "1. Dependency injection - Just a Reader and Writer"
 
-7. Manager comes along wants you to write business logic that looks for [OldDbName] and
-replace it with [NewDbName] in Sql script input file - Addition of a Transformer class
+"7. Manager comes along wants you to write business logic that looks for [OldDbName] and
+replace it with [NewDbName] in Sql script input file - Addition of a Transformer class"
 
 2. Manager comes and says wants to log all the writes to a file - decorator pattern
 
