@@ -1,7 +1,7 @@
 AltNetDI
 ===========
 
-A set of examples using DI from a talk videod here - http://www.programgood.net/files/di.zip
+A set of examples using DI from a talk I gave, recording here - http://www.programgood.net/files/di.zip
 
 One of the ways to make **maintainable code** is through **loose coupling**.
 **DI enables loose coupling**
