@@ -11,7 +11,7 @@ Use the bootstrapper to decide which example to run.
 
 Do the examples in the following order :-)  Have left this crazy numbering system so it's in sync with the video
 
-1. Dependency injection - Just a Reader and Writer
+"1. Dependency injection - Just a Reader and Writer"
 
 7. Manager comes along wants you to write business logic that looks for [OldDbName] and
 replace it with [NewDbName] in Sql script input file - Addition of a Transformer class
