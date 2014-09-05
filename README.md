@@ -21,7 +21,7 @@ replace it with [NewDbName] in Sql script input file - Addition of a *Transforme
 -8. Using logging with a decorator with 7
 
 
--6. Manager wants to log file and database.  Adding in an AggregateWriter.. The WriterLogger decorates the AggregateWriter, which takes an array of IWriters
+-6. Manager wants to log file and database.  Adding in an *AggregateWriter*.. The *WriterLogger* decorates the *AggregateWriter*, which takes an array of *IWriters*
 
 -5. Testing - want to make sure the datetime of the logger is correct.  Uses a Func<T>
 
