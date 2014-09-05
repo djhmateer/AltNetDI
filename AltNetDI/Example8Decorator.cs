@@ -2,8 +2,8 @@
 using System.IO;
 using Xunit;
 
-//8. Manager wants you to log to screen all transformations with previous 15 characters and following 15 characters 
-//   so can see where the changes have taken place
+// 8. Manager wants you to log to screen all transformations with previous 15 characters and following 15 characters 
+//    so can see where the changes have taken place
 namespace AltNetDI8Decorator {
     class CompositionRoot {
         public static void EMain() {
@@ -50,8 +50,8 @@ namespace AltNetDI8Decorator {
     public class SQLTransformer : ISQLTransformer {
 
         public string ReplaceOldDbNamesWithNewDbNames(string sql) {
-            var positionOfReplace = sql.IndexOf("[Funny]");
-            // class / method should only do 1 thing!!! ie not call a logger here
+            // class / method should only do 1 thing!!! 
+            // ie not call a logger here
             return sql.Replace("[Funny]", "[FunnyNewDb]");
         }
     }
@@ -63,12 +63,7 @@ namespace AltNetDI8Decorator {
             this.sqlTransformer = sqlTransformer;
         }
 
-        public string GetSurroundingTextForReplace(string allSQL, int positionOfReplace) {
-            return allSQL.Substring(positionOfReplace - 18, 30);
-        }
-
         public string ReplaceOldDbNamesWithNewDbNames(string sql) {
-            //var message = GetSurroundingTextForReplace(sql, positionOfReplace);
             Console.WriteLine("SQLTransformerLogger says: {0}", sql);
             return sqlTransformer.ReplaceOldDbNamesWithNewDbNames(sql);
         }
@@ -81,21 +76,19 @@ namespace AltNetDI8Decorator {
         }
     }
 
-    //public class SQLTransformerTests {
-    //    [Fact]
-    //    public void ReplaceOldDbNamesWithNewDbNames_WhenFunny_ShouldReplaceWithFunnyNewDb() {
-    //        var transformer = new SQLTransformer(new FakeSQLTransformerLogger());
-    //        var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny]");
-    //        Assert.Equal("[FunnyNewDb]", result);
-    //    }
+    public class SQLTransformerTests {
+        [Fact]
+        public void ReplaceOldDbNamesWithNewDbNames_WhenFunny_ShouldReplaceWithFunnyNewDb() {
+            var transformer = new SQLTransformer();
+            var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny]");
+            Assert.Equal("[FunnyNewDb]", result);
+        }
 
-    //    [Fact]
-    //    public void ReplaceOldDbNamesWithNewDbNames_WhenMultipleFunny_ShouldReplaceWithFunnyNewDb() {
-    //        var transformer = new SQLTransformer(new FakeSQLTransformerLogger());
-    //        var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny] asdf asdf [Funny] asdfasdf");
-    //        Assert.Equal("[FunnyNewDb] asdf asdf [FunnyNewDb] asdfasdf", result);
-    //    }
-    //}
-
-
+        [Fact]
+        public void ReplaceOldDbNamesWithNewDbNames_WhenMultipleFunny_ShouldReplaceWithFunnyNewDb() {
+            var transformer = new SQLTransformer();
+            var result = transformer.ReplaceOldDbNamesWithNewDbNames("[Funny] asdf asdf [Funny] asdfasdf");
+            Assert.Equal("[FunnyNewDb] asdf asdf [FunnyNewDb] asdfasdf", result);
+        }
+    }
 }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="uses">
-    <Position X="5.042" Y="1.729" Height="0.427" Width="0.721" />
+  <Comment CommentText="uses and decorates">
+    <Position X="4.146" Y="3.031" Height="0.427" Width="0.721" />
   </Comment>
   <Class Name="AltNetDI8Decorator.CompositionRoot" Collapsed="true">
     <Position X="2.5" Y="1.5" Width="1.5" />
@@ -19,7 +19,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI8Decorator.TextFileReader" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="1.25" Y="3.75" Width="1.5" />
+    <Position X="1.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
@@ -27,7 +27,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI8Decorator.SQLTransformer" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="3.25" Y="3.75" Width="1.5" />
+    <Position X="3.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
@@ -35,7 +35,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI8Decorator.SQLTransformerLogger" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="6.25" Y="1.75" Width="2" />
+    <Position X="3" Y="2.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
@@ -46,7 +46,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AltNetDI8Decorator.ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5" Y="3.75" Width="1.5" />
+    <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
@@ -61,21 +61,21 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="AltNetDI8Decorator.IReader" Collapsed="true">
-    <Position X="1.25" Y="2.75" Width="1.5" />
+    <Position X="1.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AltNetDI8Decorator.ISQLTransformer" Collapsed="true">
-    <Position X="3.25" Y="2.75" Width="1.5" />
+    <Position X="3.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AltNetDI8Decorator.IWriter" Collapsed="true">
-    <Position X="5" Y="2.75" Width="1.5" />
+    <Position X="5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Example8Decorator.cs</FileName>
